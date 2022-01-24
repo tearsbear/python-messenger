@@ -7,10 +7,10 @@ app = Flask(__name__)
 # run_with_ngrok(app)
 
 # verify token goes here
-VERIFY_TOKEN = 'fb-balesin'
+VERIFY_TOKEN = ''
 
 # access token goes here
-PAGE_ACCESS_TOKEN = 'EAADdr1zptmMBAJr06syQz7ZCaBN8PFwtmHcbC8fTcs7llEZCZBKl4oofFjaVZCXFN6ONg7QdNXbDQADewmJPSnO3GGTu6zjGdC0p6dhXFQHgvZAoaaMnU08ZBTmZC3GiCPb52vTlCWNxxFOGhEMHZAoCnJzjp3SZBUhZAWQcQgZCO5pYX91xv9KUxVM'
+PAGE_ACCESS_TOKEN = ''
 
 #Function to access the Sender API
 def callSendAPI(user_id, user_message):
@@ -26,12 +26,12 @@ def callSendAPI(user_id, user_message):
                         'payload': {
                            'template_type': 'generic',
                            'elements':[{
-                                'title':'Balesin.id',
-                                'subtitle':'mimin otomatis',
+                                'title':'Google',
+                                'subtitle':'search engine',
                                 'buttons': [
                                     {
                                     'type': 'web_url',
-                                    'url': 'https://faq.balesin.id',
+                                    'url': 'https://google.co.id',
                                     'title': 'Visit now'
                                     }                             
                                 ]
